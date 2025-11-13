@@ -22,13 +22,4 @@ public class FakeBot implements Bot{
     public String getMessage(Integer index) {
         return messages.get(index);
     }
-
-    /**
-     * Позволяет проверить содержится ли сообщение в коллекции
-     * @param message Сообщение от бота
-     * @return {@code true} содержится, {@code false} не содержится
-     */
-    public boolean isContains(String message) {
-        return messages.contains(message);
-    }
 }
